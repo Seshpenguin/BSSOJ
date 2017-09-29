@@ -10,6 +10,7 @@
   "author": "Seshan Ravikumar",
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.15.5"
+    "express": "^4.15.5",
+    "socket.io": "^2.0.3"
   }
 }
