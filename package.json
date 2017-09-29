@@ -1,0 +1,15 @@
+{
+  "name": "bssoj",
+  "version": "1.0.0",
+  "description": "Bayview SS Computer Club Online Judge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Seshan Ravikumar",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
+}
