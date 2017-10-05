@@ -39,7 +39,7 @@ http.listen(3000, function(){
 
 //Socket.IO Server
 io.on('connection', function(socket){
-  console.log(socket);
+  //console.log(socket);
   console.log('a user connected');
   io.to('accounts').emit('some event');
   socket.on('disconnect', function(){
@@ -58,10 +58,12 @@ io.on('connection', function(socket){
         //io.to(accountServerID).emit('registerUser', 'for your eyes only');
       }else{
         console.log('[WARNING] Accounts server failed to register: Wrong Password');
+        socket.disconnect();
       }
         
     }else{
       console.log('[WARNING] A client attempted to register as an account server. (Server already registered)');
+      socket.disconnect();
     }
   });
 
